@@ -1,11 +1,11 @@
 import React, { Fragment } from "react";
 // import LandingLayout from "../../components/layout/LandingLayout";
-import LoginForm from "../../components/auth/authComponents/LoginForm";
+import Login from "../../components/auth/authComponents/LoginPage";
 
 const LoginPage = ({ match }) => {
   return (
     <Fragment>
-        <LoginForm />
+        <Login />
     </Fragment>
   );
 };

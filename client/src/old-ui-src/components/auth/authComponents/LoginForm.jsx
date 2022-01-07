@@ -9,35 +9,78 @@ import Button from "@mui/material/Button";
 import Link from "@mui/material/Link";
 import Divider from "@mui/material/Divider";
 import { FcGoogle } from "react-icons/fc";
-import logo from "./long-logo.png";
 import icon from "./icon-logo.png";
 
 const LoginForm = () => {
+  // CHILD COMPONENTS
+  const Logo = (
+    <img
+      src={icon}
+      style={{
+        marginTop: "40px",
+        width: "15%",
+        display: "block",
+        marginLeft: "auto",
+        marginRight: "auto",
+      }}
+    />
+  );
+
+  const GoogleButton = (
+    // TODO: make oauth client for google login and link here
+    <Button
+      variant="outlined"
+      startIcon={<FcGoogle />}
+      color="primary"
+      sx={{
+        width: 200,
+        height: 40,
+        fontSize: 12,
+        bgcolor: "#ffffff",
+      }}
+      size="small"
+      disableElevation
+    >
+      Sign in with Google
+    </Button>
+  );
+
+  const OrDivider = (
+    <Box width={200}>
+      <Divider variant="middle" textAlign="center" flexItem>
+        OR
+      </Divider>
+    </Box>
+  );
+
+  const SignInButton = (
+    <div>
+      <Button variant="contained" sx={{ width: 200 }} disableElevation>
+        Sign in
+      </Button>
+    </div>
+  );
+
+  const PageHeader = (
+    <Typography
+      variant="h4"
+      gutterBottom
+      component="div"
+      mt="10px"
+      textAlign="center"
+      sx={{ letterSpacing: "-1px" }}
+    >
+      Sign in to Deltacore
+    </Typography>
+  );
+
   return (
     <Fragment>
       <div>
         <Container maxWidth="sm">
           <div>
-            <img
-              src={icon}
-              style={{
-                marginTop: "40px",
-                width: "15%",
-                display: "block",
-                marginLeft: "auto",
-                marginRight: "auto",
-              }}
-            />
-            <Typography
-              variant="h4"
-              gutterBottom
-              component="div"
-              mt="10px"
-              textAlign="center"
-              sx={{ letterSpacing: "-1px" }}
-            >
-              Sign in to Deltacore
-            </Typography>
+            {Logo}
+            {PageHeader}
           </div>
           <Box
             component="form"
@@ -48,7 +91,7 @@ const LoginForm = () => {
             alignItems="center"
             justifyContent="center"
             width={350}
-            height={400}
+            height={450}
             display="flex"
             bgcolor="#f6f8fa"
             border={1}
@@ -84,50 +127,22 @@ const LoginForm = () => {
                   </Link>
                 </div>
               </div>
-
+              {SignInButton}
+              {OrDivider}
+              {GoogleButton}
               <div>
-                <Button
-                  variant="contained"
-                  sx={{ width: 180 }}
-                  disableElevation
-                >
-                  Sign in
-                </Button>
-              </div>
-
-              <Box width={200}>
-                <Divider variant="middle" textAlign="center" flexItem>
-                  OR
-                </Divider>
-              </Box>
-              {/* TODO: make oauth client for google login and link here */}
-              <Button
-                variant="outlined"
-                startIcon={<FcGoogle />}
-                color="primary"
-                sx={{
-                  width: 180,
-                  height: 40,
-                  fontSize: 12,
-                  bgcolor: "#ffffff",
-                }}
-                size="small"
-                disableElevation
-              >
-                Sign in with Google
-              </Button>
-              {/* <div>
+                <br />
                 <Typography variant="subtitle2">
                   New here?{" "}
                   <Link href="#" variant="subtitle2" underline="hover">
                     Create an account.
                   </Link>
                 </Typography>
-              </div> */}
+              </div>
             </Stack>
           </Box>
         </Container>
-        <Box
+        {/* <Box
           component="form"
           m="auto"
           mt="20px"
@@ -151,7 +166,7 @@ const LoginForm = () => {
               </Link>
             </Typography>
           </div>
-        </Box>
+        </Box> */}
       </div>
     </Fragment>
   );

@@ -35,7 +35,7 @@ const Login = () => {
       startIcon={<FcGoogle />}
       color="primary"
       sx={{
-        width: 200,
+        width: 250,
         height: 40,
         fontSize: 12,
         bgcolor: "#ffffff",
@@ -48,18 +48,16 @@ const Login = () => {
   );
 
   const OrDivider = (
-    <Box width={200}>
+    <Box width={250}>
       <Divider variant="middle" textAlign="center" flexItem>
         OR
       </Divider>
     </Box>
   );
 
-
-
   const PageHeader = (
     <Typography
-      variant="h4"
+      variant="h5"
       gutterBottom
       component="div"
       mt="10px"
@@ -86,8 +84,8 @@ const Login = () => {
             autoComplete="off"
             alignItems="center"
             justifyContent="center"
-            width={350}
-            height={450}
+            width={300}
+            height={400}
             display="flex"
             bgcolor="#f6f8fa"
             border={1}
@@ -99,7 +97,7 @@ const Login = () => {
               direction="column"
               justifyContent="space-evenly"
               alignItems="center"
-              width={300}
+              width={400}
             >
               <LoginForm />
               {OrDivider}

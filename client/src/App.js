@@ -1,11 +1,9 @@
 import React, { Fragment } from "react";
 import { BrowserRouter } from "react-router-dom";
-import logo from "./logo.svg";
-import { Counter } from "./features/counter/Counter";
 import "./App.css";
 import AuthRouter from "./old-ui-src/router/AuthRouter";
-import "@fontsource/roboto/400.css";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import "@fontsource/open-sans";
 
 function App() {
   const theme = createTheme({
@@ -28,6 +26,9 @@ function App() {
       info: {
         main: "#3997be",
       },
+    },
+    typography: {
+      fontFamily: ["Open Sans"],
     },
   });
 

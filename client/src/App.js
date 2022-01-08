@@ -20,6 +20,9 @@ function App() {
       success: {
         main: "#2bc194",
       },
+      error: {
+        main: "#d32f2f",  // from MUI
+      },
       danger: {
         main: "#9c503d",
       },

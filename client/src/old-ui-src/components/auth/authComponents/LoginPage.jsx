@@ -1,17 +1,17 @@
 import React from "react";
-import { Fragment } from "react";
-import Box from "@mui/material/Box";
-import Container from "@mui/material/Container";
-import Typography from "@mui/material/Typography";
-import Stack from "@mui/material/Stack";
-import Link from "@mui/material/Link";
-import Divider from "@mui/material/Divider";
-import LoginForm from "./LoginForm";
-import Button from "@mui/material/Button";
-
-
+import {
+  Stack,
+  Box,
+  Link,
+  Container,
+  Typography,
+  Button,
+  Divider,
+} from "@mui/material";
 import { FcGoogle } from "react-icons/fc";
+
 import icon from "./icon-logo.png";
+import LoginForm from "./LoginForm";
 
 const Login = () => {
   // CHILD COMPONENTS
@@ -37,7 +37,7 @@ const Login = () => {
       sx={{
         width: 250,
         height: 40,
-        fontSize: 12,
+        fontSize: 13,
         bgcolor: "#ffffff",
       }}
       size="small"
@@ -69,7 +69,7 @@ const Login = () => {
   );
 
   return (
-    <Fragment>
+    <>
       <div>
         <Container maxWidth="sm">
           <div>
@@ -85,7 +85,7 @@ const Login = () => {
             alignItems="center"
             justifyContent="center"
             width={300}
-            height={400}
+            height={425}
             display="flex"
             bgcolor="#f6f8fa"
             border={1}
@@ -100,17 +100,25 @@ const Login = () => {
               width={400}
             >
               <LoginForm />
-              {OrDivider}
-              {GoogleButton}
-              <div>
-                <br />
-                <Typography variant="subtitle2">
-                  New here?{" "}
-                  <Link href="#" variant="subtitle2" underline="hover">
-                    Create an account.
-                  </Link>
-                </Typography>
-              </div>
+              <Stack
+                spacing={2}
+                direction="column"
+                justifyContent="space-evenly"
+                alignItems="center"
+                width={400}
+              >
+                {OrDivider}
+                {GoogleButton}
+                <div>
+                  <br />
+                  <Typography variant="subtitle2">
+                    New here?{" "}
+                    <Link href="#" variant="subtitle2" underline="hover">
+                      Create an account.
+                    </Link>
+                  </Typography>
+                </div>
+              </Stack>
             </Stack>
           </Box>
         </Container>
@@ -140,7 +148,7 @@ const Login = () => {
           </div>
         </Box> */}
       </div>
-    </Fragment>
+    </>
   );
 };
 

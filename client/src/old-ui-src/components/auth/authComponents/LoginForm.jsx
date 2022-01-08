@@ -1,26 +1,34 @@
 import React from "react";
-import TextField from "@mui/material/TextField";
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
-import Link from "@mui/material/Link";
-import OutlinedInput from "@mui/material/OutlinedInput";
-import { InputLabel, FormControl, FormHelperText } from "@mui/material";
+import {
+  Stack,
+  FormControl,
+  FormHelperText,
+  Link,
+  Typography,
+  Button,
+  TextField,
+} from "@mui/material";
 import * as yup from "yup";
-import { Formik, Form, Field } from "formik";
+import { Formik, Field } from "formik";
 
 const LoginForm = () => {
   const validationSchema = yup.object({
-    email: yup
-      .string()
-      .email("Invalid email format")
-      .required("Please enter your email"),
-    password: yup.string().required("Please enter your password"),
+    email: yup.string().required("Please enter your email."),
+    password: yup.string().required("Please enter your password."),
   });
 
   const InputTextField = ({ field, form: { touched, errors }, ...props }) => {
     const isInvalid = touched[field.name] && errors[field.name];
     return (
       <FormControl error={isInvalid}>
+        <Typography
+          variant="body2"
+          sx={{
+            color: isInvalid ? "#d32f2f" : "#000000",
+          }}
+        >
+          {field.name === "email" ? "Email address" : "Password"}
+        </Typography>
         <TextField
           variant="outlined"
           size="small"
@@ -31,8 +39,8 @@ const LoginForm = () => {
           {...props}
         />
         {isInvalid ? (
-          <FormHelperText id="component-error-text">
-            Please enter your {field.name}.
+          <FormHelperText variant="standard">
+            {errors[field.name]}
           </FormHelperText>
         ) : null}
       </FormControl>
@@ -53,31 +61,33 @@ const LoginForm = () => {
       >
         {({ errors, touched }) => (
           <div>
-            <div>
-              <Typography variant="body2">Email address</Typography>
+            <Stack
+              spacing={2}
+              direction="column"
+              justifyContent="space-evenly"
+              alignItems="center"
+              width={400}
+            >
               <Field name="email" type="email" component={InputTextField} />
-            </div>
-            <div>
-              <Typography variant="body2">Password</Typography>
-              <Field name="password" type="text" component={InputTextField} />
-
-              <div style={{ textAlign: "right" }}>
-                {/* TODO: link to forgot password page */}
-                <Link href="#" variant="caption" underline="hover">
-                  Forgot your password?
-                </Link>
-              </div>
               <div>
-                <Button
-                  variant="contained"
-                  sx={{ width: 250, marginTop: "15px" }}
-                  disableElevation
-                  type="submit"
-                >
-                  Sign in
-                </Button>
+                <Field name="password" type="text" component={InputTextField} />
+                {/* TODO: link to forgot password page */}
+
+                <div style={{ textAlign: "right" }}>
+                  <Link href="#" variant="caption" underline="hover">
+                    Forgot your password?
+                  </Link>
+                </div>
               </div>
-            </div>
+              <Button
+                variant="contained"
+                sx={{ width: 250, marginTop: "15px" }}
+                disableElevation
+                type="submit"
+              >
+                Sign in
+              </Button>
+            </Stack>
           </div>
         )}
       </Formik>

@@ -1,12 +1,11 @@
 import React, { Fragment } from "react";
-import LandingLayout from "../../components/layout/LandingLayout";
+// import LandingLayout from "../../components/layout/LandingLayout";
+import Login from "../../components/auth/authComponents/LoginPage";
 
 const LoginPage = ({ match }) => {
   return (
     <Fragment>
-      <LandingLayout url={match.url}>
-        <div className="container">LOGIN PAGE</div>
-      </LandingLayout>
+        <Login />
     </Fragment>
   );
 };

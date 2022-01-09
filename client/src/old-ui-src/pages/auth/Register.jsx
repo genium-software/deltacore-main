@@ -1,10 +1,12 @@
 import React, { Fragment } from "react";
+import { useLocation } from "react-router-dom";
 import LandingLayout from "../../components/layout/LandingLayout";
 
-const RegisterPage = ({ match }) => {
+const RegisterPage = () => {
+  const location = useLocation()
   return (
     <Fragment>
-      <LandingLayout url={match.url}>
+      <LandingLayout url={location.pathname}>
         <div>REGISTER PAGE</div>
       </LandingLayout>
     </Fragment>

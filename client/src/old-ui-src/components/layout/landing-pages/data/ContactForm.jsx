@@ -37,7 +37,7 @@ const Form = () => {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      <Grid container direction={"column"} justify="center" spacing={2}>
+      <Grid container direction={"column"} justifyContent="center" spacing={2}>
         <Grid item>
           <CssTextField
             name="name"
@@ -76,8 +76,8 @@ const Form = () => {
             variant="outlined"
             color="secondary"
             multiline
-            rows="5"
-            rowsMax="5"
+            minRows="5"
+            maxRows="5"
           />
           {errors.email && "*Notes section is required"}
         </Grid>

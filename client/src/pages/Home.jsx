@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
-import Companies from "../components/layout/companies/Companies";
-import MainLayout from "../components/layout/MainLayout";
+import Companies from "../old-ui-src/components/layout/companies/Companies";
+import MainLayout from "../old-ui-src/components/layout/MainLayout";
 const Home = () => (
   <Fragment>
     <MainLayout>

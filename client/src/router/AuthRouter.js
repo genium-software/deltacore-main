@@ -1,10 +1,10 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 
-import Home from "../old-ui-src/pages/Home";
-import LandingPage from "../old-ui-src/pages/LandingPage";
-import LoginPage from "../old-ui-src/pages/auth/Login";
-import RegisterPage from "../old-ui-src/pages/auth/Register";
+import Home from "../pages/Home";
+import LandingPage from "../pages/LandingPage";
+import LoginPage from "../pages/auth/Login";
+import RegisterPage from "../pages/auth/Register";
 
 const AuthRouter = () => {
   return (

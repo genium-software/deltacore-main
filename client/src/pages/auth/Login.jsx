@@ -1,16 +1,16 @@
 import React, { Fragment } from "react";
+import LandingLayout from "../../old-ui-src/components/layout/LandingLayout";
 import { useLocation } from "react-router-dom";
-import LandingLayout from "../../components/layout/LandingLayout";
 
-const RegisterPage = () => {
+const LoginPage = () => {
   const location = useLocation()
   return (
     <Fragment>
       <LandingLayout url={location.pathname}>
-        <div>REGISTER PAGE</div>
+        <div className="container">LOGIN PAGE</div>
       </LandingLayout>
     </Fragment>
   );
 };
 
-export default RegisterPage;
+export default LoginPage;

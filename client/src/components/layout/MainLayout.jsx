@@ -2,16 +2,6 @@ import React, { Fragment } from "react";
 import Header from "./dashboard/Header";
 import Footer from "./Footer";
 const MainLayout = ({ children }) => {
-  const [isOpen, setIsOpen] = React.useState(false);
-
-  const handleDrawerOpen = () => {
-    setIsOpen(true);
-  };
-
-  const handleDrawerClose = () => {
-    setIsOpen(false);
-  };
-
   return (
     <Fragment>
       <Header>

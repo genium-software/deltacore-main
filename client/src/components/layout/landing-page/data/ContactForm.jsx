@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useForm } from "react-hook-form";
 import TextField from "@material-ui/core/TextField";
 import Grid from "@material-ui/core/Grid";
@@ -32,7 +32,7 @@ const CssTextField = withStyles({
 })(TextField);
 
 const Form = () => {
-  const { register, errors, handleSubmit, setValue } = useForm();
+  const { register, errors, handleSubmit } = useForm();
   const onSubmit = (data) => console.log(data);
 
   return (

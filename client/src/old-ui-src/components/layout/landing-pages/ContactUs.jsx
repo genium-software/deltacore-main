@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import { theme as colour } from "../../theme/default";
-import { Grid, Button, Box } from "@material-ui/core";
+import { Grid, Box } from "@material-ui/core";
 import ContactForm from "./data/ContactForm";
 
 const ContactUs = () => {
@@ -34,7 +34,7 @@ const ContactUs = () => {
         <div style={{ ...styles.layout, ...styles.borderColor }}>
           <Grid
             container
-            justify={"center"}
+            justifyContent={"center"}
             direction={"row"}
             alignContent={"flex-start"}
             spacing={3}

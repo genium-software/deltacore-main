@@ -1,4 +1,4 @@
-import "Assets/css/features.css";
+import "../../../assets/css/features.css";
 import { Box, Grid, Paper, Button, useMediaQuery } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import Divider from "../../utils/Divider";
@@ -101,7 +101,7 @@ const Features = () => {
         <Grid item md={9} sm={12} xs={12}>
           <Grid
             container
-            justify={isMobile ? "center" : "flex-end"}
+            justifyContent={isMobile ? "center" : "flex-end"}
             spacing={isMobile ? 5 : 10}
           >
             {featuresData.map(({ logo, title, description }, index) => (

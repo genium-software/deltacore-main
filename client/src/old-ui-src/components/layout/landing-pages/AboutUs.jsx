@@ -75,7 +75,7 @@ const AboutUs = (props) => {
 
   return (
     <div className={classes.container}>
-      <Grid container justify="center" direction="row">
+      <Grid container justifyContent="center" direction="row">
         <Grid
           container
           item

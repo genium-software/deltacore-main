@@ -7,9 +7,12 @@ import Description from "../components/layout/landing-pages/Description";
 import Features from "../components/layout/landing-pages/Features";
 import LandingLayout from "../components/layout/LandingLayout";
 
-const LandingPage = ({ match }) => {
+import {useLocation} from "react-router-dom";
+
+const LandingPage = () => {
+  const location = useLocation();
   return (
-    <LandingLayout url={match.url}>
+    <LandingLayout url={location.pathname}>
       <BigIntro />
       <section id="about">
         <Description />

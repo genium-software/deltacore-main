@@ -1,5 +1,5 @@
 import React, { useState, useEffect, Fragment } from "react";
-import logo from "Assets/images/logo.png";
+import logo from "../../../assets/images/logo.png";
 import AuthButtons from "./AuthButtons";
 import HeaderLink from "../../utils/StyledHeaderLink";
 import { headerLinks } from "./data/landing-page";
@@ -58,7 +58,7 @@ const Header = ({ linksAreShown = true }) => {
       <Navbar id="navbar" light expand="md" style={styles.shadow} sticky="top">
         <NavbarBrand href="/">
           <img
-            src={"/static/frontend/" + logo}
+            src={logo}
             alt="DeltaCore Logo"
             width={220}
           />

@@ -2,7 +2,7 @@
 import React, { Component, Fragment } from "react";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
-import { getCompanies, deleteCompany } from "Source/actions/companies";
+import { getCompanies, deleteCompany } from "../../../actions/companies";
 
 export class Companies extends Component {
   static propTypes = {

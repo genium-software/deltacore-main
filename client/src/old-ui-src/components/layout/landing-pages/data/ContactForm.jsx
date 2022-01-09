@@ -43,7 +43,8 @@ const Form = () => {
             name="name"
             fullWidth
             placeholder="Name"
-            inputRef={register({ required: true })}
+            // inputRef={register({ required: true })}
+            {... register({required: true})}
             id="outlined-basic"
             label="Name"
             variant="outlined"

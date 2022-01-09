@@ -16,7 +16,7 @@ import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import InboxIcon from "@material-ui/icons/MoveToInbox";
 import MailIcon from "@material-ui/icons/Mail";
-import logo from "Assets/images/logo.png";
+import logo from "../../../assets/images/logo.png";
 
 const drawerWidth = 240;
 
@@ -118,7 +118,7 @@ export default function MiniDrawer({ children }) {
             <MenuIcon />
           </IconButton>
           <img
-            src={"/static/frontend/" + logo}
+            src={logo}
             alt="DeltaCore Logo"
             width={220}
           />

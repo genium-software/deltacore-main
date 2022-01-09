@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Switch, Redirect } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 import Home from "../pages/Home";
 import LandingPage from "../pages/LandingPage";
@@ -8,12 +8,12 @@ import RegisterPage from "../pages/auth/Register";
 
 const AuthRouter = () => {
   return (
-    <Switch>
-      <Route exact path="/" component={LandingPage} />
-      <Route exact path="/dashboard" component={Home} />
-      <Route exact path="/login" component={LoginPage} />
-      <Route exact path="/register" component={RegisterPage} />
-    </Switch>
+    <Routes>
+      <Route exact path="/" element={<LandingPage />} />
+      <Route exact path="/dashboard" element={<Home />} />
+      <Route exact path="/login" element={<LoginPage />} />
+      <Route exact path="/register" element={<RegisterPage />} />
+    </Routes>
   );
 };
 

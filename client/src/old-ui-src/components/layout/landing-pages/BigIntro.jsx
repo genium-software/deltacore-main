@@ -1,8 +1,8 @@
 import React, { Fragment } from "react";
 import { Row, Col } from "reactstrap";
 import { Button } from "@material-ui/core";
-import "../../../assets/css/big-intro.css";
-import "../../../assets/css/big-intro.mobile.css";
+import "../../../../assets/css/big-intro.css";
+import "../../../../assets/css/big-intro.mobile.css";
 import styled from "styled-components";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 

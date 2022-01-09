@@ -1,4 +1,4 @@
-import { GET_COMPANIES, DELETE_COMPANY } from "../../actions/types";
+import { GET_COMPANIES, DELETE_COMPANY } from "../actions/types";
 
 // here are our states
 const initialState = {

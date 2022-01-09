@@ -4,7 +4,7 @@ import { ThemeProvider } from '@material-ui/styles'; // eslint-disable-line impo
 import { createTheme } from '@material-ui/core/styles';
 import { theme as colour } from './old-ui-src/components/theme/default.js';
 import { HashRouter as Router } from "react-router-dom";
-import AuthRouter from "./old-ui-src/router/AuthRouter";
+import AuthRouter from "./router/AuthRouter";
 
 const App = () => {
 

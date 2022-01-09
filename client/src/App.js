@@ -2,7 +2,7 @@ import React from 'react';
 
 import { ThemeProvider } from '@material-ui/styles'; // eslint-disable-line import/no-extraneous-dependencies
 import { createTheme } from '@material-ui/core/styles';
-import { theme as colour } from './old-ui-src/components/theme/default.js';
+import { theme as colour } from './components/theme/default.js';
 import { HashRouter as Router } from "react-router-dom";
 import AuthRouter from "./router/AuthRouter";
 

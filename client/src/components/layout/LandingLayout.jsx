@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import LandingHeader from "./landing-pages/LandingHeader";
+import LandingHeader from "./landing-page/LandingHeader";
 import Footer from "./Footer";
 
 const LandingLayout = ({ url, children }) => {

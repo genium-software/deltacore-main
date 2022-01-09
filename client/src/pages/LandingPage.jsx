@@ -1,11 +1,11 @@
 import React from "react";
 
-import AboutUs from "../old-ui-src/components/layout/landing-pages/AboutUs";
-import BigIntro from "../old-ui-src/components/layout/landing-pages/BigIntro";
-import ContactUs from "../old-ui-src/components/layout/landing-pages/ContactUs";
-import Description from "../old-ui-src/components/layout/landing-pages/Description";
-import Features from "../old-ui-src/components/layout/landing-pages/Features";
-import LandingLayout from "../old-ui-src/components/layout/LandingLayout";
+import AboutUs from "../components/layout/landing-page/AboutUs";
+import BigIntro from "../components/layout/landing-page/BigIntro";
+import ContactUs from "../components/layout/landing-page/ContactUs";
+import Description from "../components/layout/landing-page/Description";
+import Features from "../components/layout/landing-page/Features";
+import LandingLayout from "../components/layout/LandingLayout";
 
 import {useLocation} from "react-router-dom";
 

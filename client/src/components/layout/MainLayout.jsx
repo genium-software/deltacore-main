@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import Header from "../layout/dashboard/Header";
+import Header from "./dashboard/Header";
 import Footer from "./Footer";
 const MainLayout = ({ children }) => {
   const [isOpen, setIsOpen] = React.useState(false);

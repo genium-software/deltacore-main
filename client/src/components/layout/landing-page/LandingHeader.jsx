@@ -1,8 +1,8 @@
 import React, { useState, useEffect, Fragment } from "react";
-import logo from "../../../../assets/images/logo.png";
+import logo from "../../../assets/images/logo.png";
 import AuthButtons from "./AuthButtons";
 import HeaderLink from "../../utils/StyledHeaderLink";
-import { headerLinks } from "./data/landing-page";
+import { headerLinks } from "../../../components/layout/landing-page/data/landing-page";
 
 import {
   Collapse,

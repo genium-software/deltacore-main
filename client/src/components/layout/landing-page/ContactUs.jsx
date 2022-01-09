@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import { theme as colour } from "../../theme/default";
 import { Grid, Box } from "@material-ui/core";
-import ContactForm from "./data/ContactForm";
+import ContactForm from "../../../components/layout/landing-page/data/ContactForm";
 
 const ContactUs = () => {
   const styles = {

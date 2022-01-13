@@ -1,0 +1,11 @@
+This directory will hold REST resources.
+
+E.g:
+.
+└── resources/
+    └── foo/
+        ├── foo.controller.ts
+        ├── foo.interface.ts
+        ├── foo.model.ts
+        ├── foo.service.ts
+        └── foo.validation.ts

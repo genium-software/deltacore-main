@@ -1,3 +1,7 @@
+# Personal
+.idea
+build/
+
 # Logs
 logs
 *.log

@@ -3,15 +3,17 @@ import {
   Stack,
   FormControl,
   FormHelperText,
-  Link,
   Typography,
   Button,
   TextField,
+  Checkbox,
+  FormControlLabel,
+  Link
 } from "@mui/material";
 import * as yup from "yup";
 import { Formik, Field } from "formik";
 
-const LoginForm = () => {
+const RegisterForm = () => {
   const validationSchema = yup.object({
     email: yup.string().required("Please enter your email."),
     password: yup.string().required("Please enter your password."),
@@ -66,26 +68,44 @@ const LoginForm = () => {
               direction="column"
               justifyContent="space-evenly"
               alignItems="center"
-              width={400}
+              width={325}
             >
-              <Field name="email" type="email" component={InputTextField} />
               <div>
-                <Field name="password" type="password" component={InputTextField} />
-                {/* TODO: link to forgot password page */}
-
-                <div style={{ textAlign: "right" }}>
-                  <Link href="#" variant="caption" underline="hover">
-                    Forgot your password?
-                  </Link>
-                </div>
+                <Typography variant="body2">Email address</Typography>
+                <TextField
+                  variant="outlined"
+                  size="small"
+                  type="text"
+                  sx={{ width: 250, bgcolor: "#ffffff" }}
+                />
               </div>
+              <div>
+                <Typography variant="body2">Password</Typography>
+                <TextField
+                  variant="outlined"
+                  size="small"
+                  type="password"
+                  sx={{ width: 250, bgcolor: "#ffffff" }}
+                />
+              </div>
+              <div>
+                <Typography
+                  variant="body2"
+                  gutterBottom
+                  sx={{ fontSize: "10px", width: "250px" }}
+                >
+                  By clicking the "Sign Up" button, you are creating a Deltacore
+                  account, and you agree to our <Link>Terms of Use</Link> and <Link>Privacy Policy</Link>.
+                </Typography>
+              </div>
+
               <Button
                 variant="contained"
                 sx={{ width: 250, marginTop: "15px" }}
                 disableElevation
                 type="submit"
               >
-                Sign in
+                Sign Up
               </Button>
             </Stack>
           </div>
@@ -95,4 +115,4 @@ const LoginForm = () => {
   );
 };
 
-export default LoginForm;
+export default RegisterForm;

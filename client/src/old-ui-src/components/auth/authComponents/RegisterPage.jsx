@@ -1,25 +1,27 @@
 import React from "react";
 import { Container, Typography, Link } from "@mui/material";
 
-import logo from "./long-logo.png";
+import logo from "./images/long-logo.png";
 import RegisterForm from "./RegisterForm";
-import GoogleButton from "./GoogleButton";
-import OrDivider from "./OrDivider";
-import PageHeader from "./PageHeader";
-import PageLayout from "./PageLayout";
+import GoogleButton from "./shared/GoogleButton";
+import OrDivider from "./shared/OrDivider";
+import PageHeader from "./shared/PageHeader";
+import PageLayout from "./shared/PageLayout";
 
 const Register = () => {
   const Logo = (
-    <img
-      src={logo}
-      style={{
-        marginTop: "40px",
-        width: "50%",
-        display: "block",
-        marginLeft: "auto",
-        marginRight: "auto",
-      }}
-    />
+    <a href="/">
+      <img
+        src={logo}
+        style={{
+          marginTop: "40px",
+          width: "50%",
+          display: "block",
+          marginLeft: "auto",
+          marginRight: "auto",
+        }}
+      />
+    </a>
   );
 
   return (

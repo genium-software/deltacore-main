@@ -6,26 +6,27 @@ import {
   Typography,
 } from "@mui/material";
 
-import icon from "./icon-logo.png";
+import icon from "./images/icon-logo.png";
 import LoginForm from "./LoginForm";
-import GoogleButton from "./GoogleButton";
-import OrDivider from "./OrDivider";
-import PageHeader from "./PageHeader";
-import PageLayout from "./PageLayout";
+import GoogleButton from "./shared/GoogleButton";
+import OrDivider from "./shared/OrDivider";
+import PageHeader from "./shared/PageHeader";
+import PageLayout from "./shared/PageLayout";
 
 const Login = () => {
-  // CHILD COMPONENTS
   const Logo = (
-    <img
-      src={icon}
-      style={{
-        marginTop: "40px",
-        width: "10%",
-        display: "block",
-        marginLeft: "auto",
-        marginRight: "auto",
-      }}
-    />
+    <a href="/">
+      <img
+        src={icon}
+        style={{
+          marginTop: "40px",
+          width: "10%",
+          display: "block",
+          marginLeft: "auto",
+          marginRight: "auto",
+        }}
+      />
+    </a>
   );
 
   return (

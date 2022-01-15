@@ -1,6 +1,4 @@
-import {
-  Typography,
-} from "@mui/material";
+import { Typography } from "@mui/material";
 
 const PageHeader = ({ children }) => {
   return (
@@ -11,7 +9,7 @@ const PageHeader = ({ children }) => {
       mt="10px"
       margin="auto"
       textAlign="center"
-      sx={{ letterSpacing: "-1px", fontSize: "30px" }}
+      sx={{ letterSpacing: "-1px", fontSize: "28px" }}
     >
       {children}
     </Typography>

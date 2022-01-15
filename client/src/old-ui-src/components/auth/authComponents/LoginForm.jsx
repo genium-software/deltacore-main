@@ -70,7 +70,11 @@ const LoginForm = () => {
             >
               <Field name="email" type="email" component={InputTextField} />
               <div>
-                <Field name="password" type="password" component={InputTextField} />
+                <Field
+                  name="password"
+                  type="password"
+                  component={InputTextField}
+                />
                 {/* TODO: link to forgot password page */}
 
                 <div style={{ textAlign: "right" }}>

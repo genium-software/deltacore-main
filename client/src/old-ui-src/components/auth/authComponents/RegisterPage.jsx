@@ -1,9 +1,5 @@
 import React from "react";
-import {
-  Stack,
-  Box,
-  Container,
-} from "@mui/material";
+import { Container, Typography, Link } from "@mui/material";
 
 import logo from "./long-logo.png";
 import RegisterForm from "./RegisterForm";
@@ -37,6 +33,13 @@ const Register = () => {
             </div>
           </div>
           <PageLayout>
+            <Typography variant="subtitle2">
+              Already have an account?{" "}
+              <Link href="/login" underline="hover">
+                Sign in.
+              </Link>
+            </Typography>
+            <br />
             <GoogleButton>Sign up with Google</GoogleButton>
             <OrDivider />
             <RegisterForm />

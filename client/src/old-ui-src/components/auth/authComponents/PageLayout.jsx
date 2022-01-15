@@ -9,8 +9,8 @@ const PageLayout = ({ children }) => {
       autoComplete="off"
       alignItems="center"
       justifyContent="center"
-      width={300}
-      height={395}
+      width={325}
+      height={580}
       display="flex"
       bgcolor="#f6f8fa"
       border={1}

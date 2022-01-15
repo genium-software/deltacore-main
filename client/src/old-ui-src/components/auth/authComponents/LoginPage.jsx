@@ -20,7 +20,7 @@ const Login = () => {
       src={icon}
       style={{
         marginTop: "40px",
-        width: "15%",
+        width: "10%",
         display: "block",
         marginLeft: "auto",
         marginRight: "auto",

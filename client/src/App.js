@@ -36,13 +36,15 @@ function App() {
   });
 
   return (
-    <Fragment>
-      <BrowserRouter>
-        <ThemeProvider theme={theme}>
-          <AuthRouter />
-        </ThemeProvider>
-      </BrowserRouter>
-    </Fragment>
+    <div className="App-background">
+      <Fragment>
+        <BrowserRouter>
+          <ThemeProvider theme={theme}>
+            <AuthRouter />
+          </ThemeProvider>
+        </BrowserRouter>
+      </Fragment>
+    </div>
   );
 }
 

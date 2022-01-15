@@ -10,10 +10,10 @@ const AuthRouter = () => {
   return (
     <Fragment>
       <Routes>
-        <Route exact path="/" element={<LoginPage />} />
-        {/* <Route exact path="/dashboard" component={Home} />
-      <Route exact path="/login" component={LoginPage} /> */}
-      <Route exact path="/register" element={<RegisterPage />} />
+        {/* <Route exact path="/" element={<LandingPage />} /> */}
+        {/* <Route exact path="/dashboard" component={Home} /> */}
+      <Route exact path="/login" element={<LoginPage />} />
+        <Route exact path="/register" element={<RegisterPage />} />
       </Routes>
     </Fragment>
   );

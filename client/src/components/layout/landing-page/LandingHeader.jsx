@@ -65,7 +65,7 @@ const Header = ({ linksAreShown = true }) => {
         </NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
-          <Nav className="mr-auto" navbar>
+          <Nav className="me-auto" navbar>
             {linksAreShown &&
               headerLinks.map((h, index) => {
                 return (

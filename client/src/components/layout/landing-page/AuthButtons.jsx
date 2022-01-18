@@ -2,7 +2,7 @@ import React from "react";
 import { Button, Grid } from "@material-ui/core";
 
 const AuthButtons = () => (
-  <Grid container spacing={2} style={{width: "100%"}}>  
+  <Grid container spacing={3}>  
     <Grid item xs={6} style={{ color: "white" }}>
       <Button
         variant="contained"

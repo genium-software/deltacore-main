@@ -75,10 +75,8 @@ const LoginForm = () => {
                   type="password"
                   component={InputTextField}
                 />
-                {/* TODO: link to forgot password page */}
-
                 <div style={{ textAlign: "right" }}>
-                  <Link href="#" variant="caption" underline="hover">
+                  <Link href="/login/forgot" variant="caption" underline="hover">
                     Forgot your password?
                   </Link>
                 </div>

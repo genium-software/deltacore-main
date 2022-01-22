@@ -10,7 +10,7 @@ const PageLayout = ({ children }) => {
       alignItems="center"
       justifyContent="center"
       width={325}
-      height={580}
+      height={400}
       display="flex"
       bgcolor="#f6f8fa"
       border={1}
